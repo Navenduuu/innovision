@@ -1,0 +1,145 @@
+body{
+    background: linear-gradient(90deg, #010b02, #000305);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+}
+
+/* Reset default browser styles *
+
+/* Navigation bar container */
+.navbar {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background:linear-gradient(90deg,#010b02,#000305) ;
+    /*padding: 10px 20px;*/
+}
+
+/* Logo styling */
+.logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Navigation links container */
+.nav-links {
+    list-style: none;
+    display: flex;
+    width: 30%;
+    margin-left: 35%;
+}
+
+Individual navigation links 
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+    color: #04AA6D;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction:row;
+    }
+    .nav-links {
+        flex-direction:row;
+        width: 100%;
+    }
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+.head{
+    text-align: center;
+    
+}
+
+
+/* General styles for the countdown timer */
+#countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #fff;
+    background: linear-gradient(90deg,#010b02 ,#000305);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style for each countdown unit (days, hours, etc.) */
+.countdown-unit {
+    text-align: center;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 80px;
+}
+
+/* Numbers for the countdown */
+.countdown-number {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Labels (Days, Hours, etc.) */
+.countdown-label {
+    font-size: 14px;
+    padding: 2%;
+    text-transform: uppercase;
+    
+    color: #ddd;
+}
+
+.footer{
+    background:linear-gradient(90deg,#333,#51789e) ;
+    color: #f2f2f2;
+
+    
+}
+.foot{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#regnow{
+    align-items: center;
+}
+
+#logo{
+    margin-left: 0%;
+    width: 5%;
+    height: auto;
+    background-color: #000305;
+}
+#innovation{
+    width: 30%;
+    align-items:center ;
+    margin-left: 35%;
+}
+
+.link{
+    margin-left: 20px;
+    align-items: center;
+}
+
