@@ -1,116 +1,158 @@
 body{
-    background: linear-gradient(90deg, #010b02, #000305);
+    background-image: url('event-background.png'); opacity: 1.5;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     color: white;
 }
 
-/* Reset default browser styles *
 
-/* Navigation bar container */
-.navbar {
-   
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    background:linear-gradient(90deg,#010b02,#000305) ;
-    /*padding: 10px 20px;*/
-}
+
+
 
 /* Logo styling */
-.logo {
-    font-size: 24px;
-    color: #fff;
+#logo {
+    background: rgba(255, 255, 255, 0);opacity:0.8;
+    backdrop-filter: none;
     font-weight: bold;
-}
-
-/* Navigation links container */
-.nav-links {
-    list-style: none;
-    display: flex;
-    width: 30%;
-    margin-left: 35%;
-}
-
-Individual navigation links 
-.nav-links li {
+    width: 50px;
     margin-left: 20px;
+    padding-bottom: 2px;
 }
 
-.nav-links a {
+.navbar {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Glass effect */
+    position: sticky;
+    border-radius: 30px;
+    padding: 15px 0;
+    z-index: auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: white;
     text-decoration: none;
-    color: #f2f2f2;
     font-size: 18px;
-    transition: color 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.3s ease;
 }
 
-/* Hover effect for links */
-.nav-links a:hover {
-    color: #04AA6D;
+/* Hover effect */
+.navbar ul li a:hover {
+    color: #f39c12;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction:row;
-    }
-    .nav-links {
-        flex-direction:row;
-        width: 100%;
-    }
-    .nav-links li {
-        text-align: center;
-        margin: 10px 0;
-    }
+/* Optional: Add a subtle shadow for better contrast */
+.navbar ul li a {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
+
 
 .head{
     text-align: center;
+
     
 }
+.heading {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Style for the orange text */
+.orange {
+    color: #eb4508; /* Deep orange color */
+}
+
+/* Style for the rest of the text 
+.heading span {
+    color: white;
+}*/
 
 
-/* General styles for the countdown timer */
+.timer-container {
+    text-align: center;
+    
+    
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Style the countdown */
 #countdown {
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 20px;
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    color: #fff;
-    background: linear-gradient(90deg,#010b02 ,#000305);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for each countdown unit (days, hours, etc.) */
-.countdown-unit {
-    text-align: center;
-    padding: 10px 15px;
+.time-box {
+    margin: 0 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #333;
+}
+.time-box:hover {
+    color: #f39c12;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    width: 80px;
+}
+.time-box p {
+    margin: 0;
 }
 
-/* Numbers for the countdown */
-.countdown-number {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-/* Labels (Days, Hours, etc.) */
-.countdown-label {
+.time-box span {
     font-size: 14px;
-    padding: 2%;
-    text-transform: uppercase;
-    
-    color: #ddd;
+    color: #666;
 }
 
-.footer{
+/* Style for timer responsiveness */
+@media (max-width: 600px) {
+    .time-box {
+        font-size: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+
+.reg{
+    
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#register-button{
+    display: block;
+    margin: 0 auto;
+}
+footer{
+    margin-bottom: 50px;
+    margin-top: 200px;
     background:linear-gradient(90deg,#333,#51789e) ;
     color: #f2f2f2;
 
@@ -122,16 +164,19 @@ Individual navigation links
     padding: 10px;
     box-sizing: border-box;
 }
+.footer{
+    background-color: #333;
+}
 #regnow{
     align-items: center;
 }
 
-#logo{
+/*#logo{
     margin-left: 0%;
     width: 5%;
     height: auto;
     background-color: #000305;
-}
+}*/
 #innovation{
     width: 30%;
     align-items:center ;
@@ -142,4 +187,12 @@ Individual navigation links
     margin-left: 20px;
     align-items: center;
 }
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xx-large;
+}
+#about{
+    font-size: xx-large;
+}
+
 
